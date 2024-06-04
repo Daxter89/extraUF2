@@ -10,6 +10,7 @@
             height: 100%;
             margin: 0;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background-color: #000;
@@ -22,7 +23,7 @@
             max-height: 800px;
             margin: 20px;
             border: 5px solid #333;
-            box-shadow: 0 0 20px rgba(35, 34, 34, 0.7);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
         }
         .background {
             width: 100%;
@@ -33,7 +34,9 @@
         .nave {
             position: absolute;
             width: 200px;
-            animation: landing 5s ease-in-out forwards;
+            top: -200px;
+            left: 50%;
+            transform: translateX(-50%);
         }
         @keyframes landing {
             0% {
@@ -52,14 +55,28 @@
                 transform: translateX(-50%);
             }
         }
+        .controls {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="background"></div>
-        <img src="nau3.png" alt="Nave" class="nave">
+        <img src="nau3.png" alt="Nave" class="nave" id="nave">
+    </div>
+    <div class="controls">
+        <button onclick="startAnimation()">Play</button>
+        <audio id="audio" src="so-aterratge.mp3"></audio>
     </div>
     <p>Àudio de Pixabay: <a href="https://pixabay.com/es/users/pixabay-1/" target="_blank">https://pixabay.com/es/users/pixabay-1/</a></p>
     <p>Llicència: <a href="https://pixabay.com/es/service/license-summary/" target="_blank">https://pixabay.com/es/service/license-summary/</a></p>
+
+    <script>
+        function startAnimation() {
+            document.getElementById('nave').style.animation = 'landing 5s ease-in-out forwards';
+            document.getElementById('audio').play();
+        }
+    </script>
 </body>
 </html>
