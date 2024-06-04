@@ -13,7 +13,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #000;
+            background-color: #ccc9c9;
         }
         .container {
             position: relative;
@@ -58,6 +58,16 @@
         .controls {
             margin-top: 20px;
         }
+        .play-button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .play-button svg {
+            width: 50px;
+            height: 50px;
+            fill: white;
+        }
     </style>
 </head>
 <body>
@@ -66,7 +76,9 @@
         <img src="nau3.png" alt="Nave" class="nave" id="nave">
     </div>
     <div class="controls">
-        <button onclick="startAnimation()">Play</button>
+        <button class="play-button" onclick="startAnimation()">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        </button>
         <audio id="audio" src="so-aterratge.mp3"></audio>
     </div>
     <p>Àudio de Pixabay: <a href="https://pixabay.com/es/users/pixabay-1/" target="_blank">https://pixabay.com/es/users/pixabay-1/</a></p>
