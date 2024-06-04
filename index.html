@@ -5,76 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Examen Extraordinària 23/24 - M9 - UF2</title>
-    <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background-color: #4b4a4a;
-        }
-        .container {
-            position: relative;
-            width: 100%;
-            height: 80%;
-            margin: 20px;
-            border: 5px solid #333;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
-            overflow: hidden;
-        }
-        .background {
-            width: 100%;
-            height: 100%;
-            background: url('Superficie.jpg') no-repeat center center;
-            background-size: cover;
-        }
-        .nave {
-            position: absolute;
-            width: 200px;
-            top: -200px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-        @keyframes landing {
-            0% {
-                top: -200px;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            90% {
-                top: 70%;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-            100% {
-                top: 75%;
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-        .controls {
-            margin-top: 20px;
-        }
-        .play-button {
-            background: none;
-            border: none;
-            cursor: pointer;
-            padding: 0;
-            outline: none;
-        }
-        .play-button svg {
-            width: 80px;
-            height: 80px;
-            fill: white;
-        }
-        .credits {
-            margin-top: 20px;
-            color: white;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">  <!-- Referencia al archivo CSS externo -->
 </head>
 <body>
     <div class="container">
