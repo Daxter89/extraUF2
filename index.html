@@ -13,7 +13,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #ccc9c9;
+            background-color: #000;
         }
         .container {
             position: relative;
@@ -68,6 +68,11 @@
             height: 50px;
             fill: white;
         }
+        .credits {
+            margin-top: 20px;
+            color: white;
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -81,8 +86,11 @@
         </button>
         <audio id="audio" src="so-aterratge.mp3"></audio>
     </div>
-    <p>Àudio de Pixabay: <a href="https://pixabay.com/es/users/pixabay-1/" target="_blank">https://pixabay.com/es/users/pixabay-1/</a></p>
-    <p>Llicència: <a href="https://pixabay.com/es/service/license-summary/" target="_blank">https://pixabay.com/es/service/license-summary/</a></p>
+    <div class="credits">
+        <p>Imatge de fons: <a href="https://pixabay.com/es/photos/la-carretera-pavimento-166543/" target="_blank">Pixabay</a></p>
+        <p>Àudio de Pixabay: <a href="https://pixabay.com/es/users/pixabay-1/" target="_blank">Pixabay</a></p>
+        <p>Llicència: <a href="https://pixabay.com/es/service/license-summary/" target="_blank">Pixabay License</a></p>
+    </div>
 
     <script>
         function startAnimation() {
